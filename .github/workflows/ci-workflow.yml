@@ -65,7 +65,7 @@ jobs:
       - name: SonarCloud Scan
         run: |
           mvn -B verify sonar:sonar \
-            -Dsonar.projectKey=anjudoll_junit \
+            -Dsonar.projectKey=anjudoll_demo \
             -Dsonar.organization=anjudoll \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }}
